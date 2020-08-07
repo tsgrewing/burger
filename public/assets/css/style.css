@@ -1,17 +1,31 @@
+body {
+  background-color: #f49840
+}
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #e1e6e3;
 }
 
+.devour {
+  background-color: #008875;
+}
+
+#uneaten li {
+  border: 2px outset #dfb988;
+}
+
+#devoured li {
+  border: 2px inset #7e7972;
+}
 .label {
   font-weight: bold;
 }
 
-.create-update-form {
+.create-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  text-align: center;
 }
 
 .form-group {
