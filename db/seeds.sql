@@ -1,0 +1,10 @@
+INSERT INTO burgers (name) VALUES ('Paranormal Pepper Jack-tivity Burger');
+INSERT INTO burgers (name) VALUES ('The Greasy Lard Bomb');
+INSERT INTO burgers (name) VALUES ('I Know Why the Cajun Burger Sings');
+INSERT INTO burgers (name) VALUES ('Chile Relleno-You-Didn’t Burger');
+INSERT INTO burgers (name) VALUES ('Royale With Cheese');
+INSERT INTO burgers (name) VALUES ("The Cauliflower's Cumin From Inside the House Burger (comes with cauliflower & cumin)");
+INSERT INTO burgers (name) VALUES ('The Good Burger');
+INSERT INTO burgers (name) VALUES ('Double Krusty Burger');
+INSERT INTO burgers (name) VALUES ('Krabby Patty');
+INSERT INTO burgers (name) VALUES ('Big Kahuna Burger');
