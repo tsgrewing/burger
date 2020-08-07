@@ -1,4 +1,3 @@
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   $(".devour").on("click", function(event) {
     var id = $(this).data("id");
@@ -20,9 +19,10 @@ $(function() {
     event.preventDefault();
 
     var newBurger = {
-      name: $("#ca").val().trim(),
+      burger_name: $("#newBurger").val().trim(),
       devoured: false
     };
+    console.log(newBurger);
 
     // Send the POST request.
     $.ajax("/api/burgers", {

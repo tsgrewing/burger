@@ -1,28 +1,41 @@
 <h1>Eat the Burgers</h1>
-<div class="clearfix">
-    <ul id="uneaten">
+<div class="clearfix list-wrapper">
+    <ul id="uneatenList">
     {{#each burgers}}
         {{#unless devoured}}
-        <li>
-            {{name}}
+        <li class="uneaten">
+            <p>{{burger_name}}</p>
             <button class="devour" data-id="{{id}}">
-                {{#unless devoured}}Devour!{{/if}}
+                Devour!
             </button>
         </li>
         {{/unless}}
     {{/each}}
     </ul>
+    {{!-- <ul id="buttonList">
+    {{#each burgers}}
+        {{#unless devoured}}
+        <li>
+            <button class="devour" data-id="{{id}}">
+                Devour!
+            </button>
+        </li>
+        {{/unless}}
+    {{/each}}
+    </ul> --}}
 
-    <ul id="devoured">
+    <ul id="devouredList">
     {{#each burgers}}
         {{#if devoured}}
-        {{name}}
+        <li class="devoured">
+            {{burger_name}}
         {{/if}}
+        </li>   
     {{/each}}
     </ul>
 </div>
 <h2>Add a Burger</h2>
-<form class="create-form">
+<form class="create-form clearfix">
 
   <div class="form-group">
     <input type="text" id="newBurger" name="name">
