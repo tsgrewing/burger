@@ -1,6 +1,8 @@
+<img src="/assets/images/burger.png"/>
 <h1>Eat the Burgers</h1>
 <div class="clearfix list-wrapper">
     <ul id="uneatenList">
+        <h2>Burgers to Devour</h2>
     {{#each burgers}}
         {{#unless devoured}}
         <li class="uneaten">
@@ -12,19 +14,10 @@
         {{/unless}}
     {{/each}}
     </ul>
-    {{!-- <ul id="buttonList">
-    {{#each burgers}}
-        {{#unless devoured}}
-        <li>
-            <button class="devour" data-id="{{id}}">
-                Devour!
-            </button>
-        </li>
-        {{/unless}}
-    {{/each}}
-    </ul> --}}
+
 
     <ul id="devouredList">
+        <h2>Devoured Burgers</h2>
     {{#each burgers}}
         {{#if devoured}}
         <li class="devoured">
