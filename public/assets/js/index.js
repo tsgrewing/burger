@@ -17,12 +17,17 @@ $(function() {
   $(".create-form").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
-
-    var newBurger = {
-      burger_name: $("#newBurger").val().trim(),
-      devoured: false
-    };
-    console.log(newBurger);
+    var burgerName = $("#newBurger").val().trim();
+    var newBurger;
+    if (burgerName != '') {
+      newBurger = {
+        burger_name: burgerName,
+        devoured: false
+      };
+    }
+    else {
+      return false;
+    }
 
     // Send the POST request.
     $.ajax("/api/burgers", {
