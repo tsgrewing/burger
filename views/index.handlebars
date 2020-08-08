@@ -1,7 +1,7 @@
 <img src="/assets/images/burger.png"/>
 <h1>Eat the Burgers</h1>
-<div class="clearfix list-wrapper">
-    <ul id="uneatenList">
+<div class="row list-wrapper">
+    <ul class="col-sm-12 col-md-6" id="uneatenList">
         <h2>Burgers to Devour</h2>
     {{#each burgers}}
         {{#unless devoured}}
@@ -16,7 +16,7 @@
     </ul>
 
 
-    <ul id="devouredList">
+    <ul class="col-sm-12 col-md-6" id="devouredList">
         <h2>Devoured Burgers</h2>
     {{#each burgers}}
         {{#if devoured}}
