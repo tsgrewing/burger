@@ -26,6 +26,7 @@ $(function() {
       };
     }
     else {
+      $("#newBurger").val('')
       return false;
     }
 
